@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href=" rel="stylesheet">
+    <style type="text/css">
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            width: 100%;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Container grid setup */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 20px;
+            padding: 0 20px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar .box {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar .box:hover {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Content pages styling */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .page {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .page:hover {
+            transform: scale(1.05);
+        }
+
+        /* Picture styling */
+        .picture {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .picture-frame {
+            width: 100px; /* Reduced width for smaller picture */
+            height: 100px; /* Reduced height for smaller picture */
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #555;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .picture-frame:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        My Profile
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="box">Personal Information</div>
+            <div class="box">Educational Background</div>
+            <div class="box">Contact</div>
+        </div>
+        <div class="content">
+            <div class="page">Page 1</div>
+            <div class="page">Page 2</div>
+            <div class="page">Page 3</div>
+        </div>
+        <div class="picture">
+            <img src="https://scontent.fmnl9-6.fna.fbcdn.net/v/t39.30808-6/454207352_8024619744299511_891003377084870475_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHIs5Ldb0Olq1gysPcTTiqjRqhVpoE_XNdGqFWmgT9c15gkz_LDPLPTIelK7TMl3uF0RlMx9Z5RGFX0NCu4rGBP&_nc_ohc=3YhPeIfEZcoQ7kNvgHJ9Xqi&_nc_zt=23&_nc_ht=scontent.fmnl9-6.fna&_nc_gid=AKC9QqvqYLAl4MRdUJFllXH&oh=00_AYCpT6Oe6oyOcoAceGdI9OUfCXh5CGxPbyMEqPbgwUb5vA&oe=674EEB6A" alt="Profile Picture" style="width: 100px; height: 100px;">
+        </div>
+    </div>
+</body>
+</html>
